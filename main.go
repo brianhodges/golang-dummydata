@@ -22,7 +22,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 			p := post.Post{}
 			p.ID = i
 			p.Title = lorem.Sentence(1, 10)
-			p.Text = lorem.Paragraph(2, 5)
+			p.Text = lorem.Paragraph(4, 6)
 			p.Source = lorem.Host()
 			p.Author = randomdata.FirstName(randomdata.RandomGender)
 			p.DateTimeCreated = randomdata.FullDate()
